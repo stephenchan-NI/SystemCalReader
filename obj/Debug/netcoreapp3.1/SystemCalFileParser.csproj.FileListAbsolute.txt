@@ -1,0 +1,13 @@
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\obj\Debug\netcoreapp3.1\SystemCalFileParser.csprojAssemblyReference.cache
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\obj\Debug\netcoreapp3.1\SystemCalFileParser.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\obj\Debug\netcoreapp3.1\SystemCalFileParser.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\obj\Debug\netcoreapp3.1\SystemCalFileParser.AssemblyInfo.cs
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\bin\Debug\netcoreapp3.1\SystemCalFileParser.exe
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\bin\Debug\netcoreapp3.1\SystemCalFileParser.deps.json
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\bin\Debug\netcoreapp3.1\SystemCalFileParser.runtimeconfig.json
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\bin\Debug\netcoreapp3.1\SystemCalFileParser.runtimeconfig.dev.json
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\bin\Debug\netcoreapp3.1\SystemCalFileParser.dll
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\bin\Debug\netcoreapp3.1\SystemCalFileParser.pdb
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\obj\Debug\netcoreapp3.1\SystemCalFileParser.dll
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\obj\Debug\netcoreapp3.1\SystemCalFileParser.pdb
+C:\Users\admin\Documents\AnokiWave\SystemCalFileParser\SystemCalFileParser\obj\Debug\netcoreapp3.1\SystemCalFileParser.genruntimeconfig.cache

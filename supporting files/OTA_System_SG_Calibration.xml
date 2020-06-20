@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="NiCalibration.xsl"?>
+<Calibration xsi:noNamespaceSchemaLocation="NiCalibration.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DateTime>2020-01-24T09:29:53.3240375-06:00</DateTime>
+  <SignalPaths>
+    <DutInput1A Instr_Port="rf1/port0" Path_Type="TX Path" Source_Port="Cable In" Destination_Port="Cable Out" Path_Gain_dB="0" Error_Tolerance_dB="0.05">
+      <Pathloss0 Frequency="24000000000" Power="-10" Error_dB="0.000096" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.334791</Pathloss0>
+      <Pathloss1 Frequency="24250000000" Power="-10" Error_dB="-0.030358" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.465776</Pathloss1>
+      <Pathloss2 Frequency="24500000000" Power="-10" Error_dB="-0.014237" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.471199</Pathloss2>
+      <Pathloss3 Frequency="24750000000" Power="-10" Error_dB="-0.012661" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.58141</Pathloss3>
+      <Pathloss4 Frequency="25000000000" Power="-10" Error_dB="-0.03574" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.556229</Pathloss4>
+      <Pathloss5 Frequency="25250000000" Power="-10" Error_dB="0.002727" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.558557</Pathloss5>
+      <Pathloss6 Frequency="25500000000" Power="-10" Error_dB="-0.001542" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.949778</Pathloss6>
+      <Pathloss7 Frequency="25750000000" Power="-10" Error_dB="-0.002136" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.856015</Pathloss7>
+      <Pathloss8 Frequency="26000000000" Power="-10" Error_dB="-0.001735" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">9.898025</Pathloss8>
+      <Pathloss9 Frequency="26250000000" Power="-10" Error_dB="-0.001859" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">10.170604</Pathloss9>
+      <Pathloss10 Frequency="26500000000" Power="-10" Error_dB="-0.000906" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">10.449853</Pathloss10>
+      <Pathloss11 Frequency="26750000000" Power="-10" Error_dB="-0.000632" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">10.236431</Pathloss11>
+      <Pathloss12 Frequency="27000000000" Power="-10" Error_dB="-0.001162" QueriedPathLoss_dB="99999" Temperature_degC="66.1875">10.561085</Pathloss12>
+      <Pathloss13 Frequency="27250000000" Power="-10" Error_dB="-0.022546" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.654774</Pathloss13>
+      <Pathloss14 Frequency="27500000000" Power="-10" Error_dB="-0.002073" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.506027</Pathloss14>
+      <Pathloss15 Frequency="27750000000" Power="-10" Error_dB="-0.000867" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.245566</Pathloss15>
+      <Pathloss16 Frequency="28000000000" Power="-10" Error_dB="-0.001026" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.51674</Pathloss16>
+      <Pathloss17 Frequency="28250000000" Power="-10" Error_dB="-0.042767" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.404772</Pathloss17>
+      <Pathloss18 Frequency="28500000000" Power="-10" Error_dB="-0.039175" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.336462</Pathloss18>
+      <Pathloss19 Frequency="28750000000" Power="-10" Error_dB="-0.027125" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.353375</Pathloss19>
+      <Pathloss20 Frequency="29000000000" Power="-10" Error_dB="-0.038354" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.255293</Pathloss20>
+      <Pathloss21 Frequency="29250000000" Power="-10" Error_dB="0.011181" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.442057</Pathloss21>
+      <Pathloss22 Frequency="29500000000" Power="-10" Error_dB="-0.018187" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.362085</Pathloss22>
+      <Pathloss23 Frequency="29750000000" Power="-10" Error_dB="-0.022805" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.460833</Pathloss23>
+      <Pathloss24 Frequency="30000000000" Power="-10" Error_dB="-0.037285" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.561981</Pathloss24>
+      <Pathloss25 Frequency="30250000000" Power="-10" Error_dB="-0.047649" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.572688</Pathloss25>
+      <Pathloss26 Frequency="30500000000" Power="-10" Error_dB="-0.034813" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.502963</Pathloss26>
+      <Pathloss27 Frequency="30750000000" Power="-10" Error_dB="-0.040834" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.541884</Pathloss27>
+      <Pathloss28 Frequency="31000000000" Power="-10" Error_dB="-0.001244" QueriedPathLoss_dB="99999" Temperature_degC="66.125">10.623274</Pathloss28>
+      <Pathloss29 Frequency="37000000000" Power="-10" Error_dB="-0.029705" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.770976</Pathloss29>
+      <Pathloss30 Frequency="37250000000" Power="-10" Error_dB="-0.014507" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.780479</Pathloss30>
+      <Pathloss31 Frequency="37500000000" Power="-10" Error_dB="-0.013359" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.860312</Pathloss31>
+      <Pathloss32 Frequency="37750000000" Power="-10" Error_dB="0.039784" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.925128</Pathloss32>
+      <Pathloss33 Frequency="38000000000" Power="-10" Error_dB="-0.001843" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.565176</Pathloss33>
+      <Pathloss34 Frequency="38250000000" Power="-10" Error_dB="-0.000797" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.12632</Pathloss34>
+      <Pathloss35 Frequency="38500000000" Power="-10" Error_dB="-0.001309" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.99687</Pathloss35>
+      <Pathloss36 Frequency="38750000000" Power="-10" Error_dB="0.008063" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.583189</Pathloss36>
+      <Pathloss37 Frequency="39000000000" Power="-10" Error_dB="0.023722" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.119821</Pathloss37>
+      <Pathloss38 Frequency="39250000000" Power="-10" Error_dB="0.044369" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.127279</Pathloss38>
+      <Pathloss39 Frequency="39500000000" Power="-10" Error_dB="0.018647" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.809704</Pathloss39>
+      <Pathloss40 Frequency="39750000000" Power="-10" Error_dB="0.001723" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.243309</Pathloss40>
+      <Pathloss41 Frequency="40000000000" Power="-10" Error_dB="0.00208" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.160404</Pathloss41>
+      <Pathloss42 Frequency="40250000000" Power="-10" Error_dB="0.019933" QueriedPathLoss_dB="99999" Temperature_degC="66.125">11.8113</Pathloss42>
+      <Pathloss43 Frequency="40500000000" Power="-10" Error_dB="0.020219" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.161311</Pathloss43>
+      <Pathloss44 Frequency="40750000000" Power="-10" Error_dB="0.021033" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.116639</Pathloss44>
+      <Pathloss45 Frequency="41000000000" Power="-10" Error_dB="0.046139" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.275638</Pathloss45>
+      <Pathloss46 Frequency="41250000000" Power="-10" Error_dB="0.001769" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.171334</Pathloss46>
+      <Pathloss47 Frequency="41500000000" Power="-10" Error_dB="0.002392" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.404521</Pathloss47>
+      <Pathloss48 Frequency="41750000000" Power="-10" Error_dB="0.002878" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.565525</Pathloss48>
+      <Pathloss49 Frequency="42000000000" Power="-10" Error_dB="0.00168" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.384031</Pathloss49>
+      <Pathloss50 Frequency="42250000000" Power="-10" Error_dB="0.00302" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.59267</Pathloss50>
+      <Pathloss51 Frequency="42500000000" Power="-10" Error_dB="0.002741" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.589663</Pathloss51>
+      <Pathloss52 Frequency="42750000000" Power="-10" Error_dB="0.03555" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.295651</Pathloss52>
+      <Pathloss53 Frequency="43000000000" Power="-10" Error_dB="0.03731" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.431135</Pathloss53>
+      <Pathloss54 Frequency="43250000000" Power="-10" Error_dB="0.040748" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.559401</Pathloss54>
+      <Pathloss55 Frequency="43500000000" Power="-10" Error_dB="0.048437" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.649683</Pathloss55>
+      <Pathloss56 Frequency="43750000000" Power="-10" Error_dB="0.022877" QueriedPathLoss_dB="99999" Temperature_degC="66.125">12.617847</Pathloss56>
+    </DutInput1A>
+  </SignalPaths>
+</Calibration>
