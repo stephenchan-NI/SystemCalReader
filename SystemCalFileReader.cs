@@ -24,31 +24,38 @@ namespace SystemCalFileParser
 
         public SystemCalFileReader(string filePath, string port, bool interpolationEnabled)
         {
-            interpolation = interpolationEnabled;
-            // Start with XmlReader object  
-            using (XmlReader reader = XmlReader.Create(filePath))
+            try
             {
-                while (reader.Read())
+                interpolation = interpolationEnabled;
+                // Start with XmlReader object  
+                using (XmlReader reader = XmlReader.Create(filePath))
                 {
-                    if (reader.GetAttribute("Instr_Port") == port)
+                    while (reader.Read())
                     {
-                        break;
+                        if (reader.GetAttribute("Instr_Port") == port)
+                        {
+                            break;
+                        }
+                    }
+                    XmlReader portCalData = reader.ReadSubtree();
+                    CalInfo data = new CalInfo();
+                    while (portCalData.Read())
+                    {
+                        if (portCalData.Name.StartsWith("Pathloss"))
+                        {
+                            data.frequency = Convert.ToDouble(portCalData.GetAttribute("Frequency"));
+                            data.power = Convert.ToDouble(portCalData.GetAttribute("CalTonePower_dBm"));
+                            data.loss = Convert.ToDouble(portCalData.ReadElementContentAsString());
+                            calData.Add(data);
+                            frequencyList.Add(data.frequency);
+                            powerList.Add(data.power);
+                        }
                     }
                 }
-                XmlReader portCalData = reader.ReadSubtree();
-                CalInfo data = new CalInfo();
-                while (portCalData.Read())
-                {
-                    if (portCalData.Name.StartsWith("Pathloss"))
-                    {
-                        data.frequency = Convert.ToDouble(portCalData.GetAttribute("Frequency"));
-                        data.power = Convert.ToDouble(portCalData.GetAttribute("CalTonePower_dBm"));
-                        data.loss = Convert.ToDouble(portCalData.ReadElementContentAsString());
-                        calData.Add(data);
-                        frequencyList.Add(data.frequency);
-                        powerList.Add(data.power);
-                    }
-                }
+            }
+            catch
+            {
+                throw;
             }
         }
 
@@ -85,9 +92,22 @@ namespace SystemCalFileParser
 
         private double interpolate(int index, double freq)
         {
-            double slope = (calData[index].loss - calData[index - 1].loss) / (calData[index].frequency - calData[index - 1].frequency);
-            double interpolatedLoss = slope * (freq - calData[index - 1].frequency) + calData[index - 1].loss;
-            return interpolatedLoss;
+            try
+            {
+                double slope = (calData[index].loss - calData[index - 1].loss) / (calData[index].frequency - calData[index - 1].frequency);
+                double interpolatedLoss = slope * (freq - calData[index - 1].frequency) + calData[index - 1].loss;
+                return interpolatedLoss;
+            }
+            catch(ArgumentOutOfRangeException ex)
+            {
+                throw new ArgumentOutOfRangeException("Requested frequency out of bounds of calibration file", ex);
+                return 0;
+            }
+            catch
+            {
+                throw;
+                return 0;
+            }
         }
 
     }
