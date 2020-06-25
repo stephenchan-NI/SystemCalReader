@@ -15,7 +15,7 @@ namespace CalDemo
         {
             string filePath = "C:\\Users\\admin\\Documents\\AnokiWave\\SystemCalFileParser\\SystemCalFileParser\\supporting files\\OTA_System_SA_Calibration.xml";
             string calPort = "rf0/port1";
-            double frequency = 24750000000;
+            double frequency = 24125000000;
             double calTone = -1;
             double pathLoss;
 

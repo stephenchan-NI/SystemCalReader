@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1169
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemCalFileParser", "..\AnokiWave\SystemCalFileParser\SystemCalFileParser\SystemCalFileParser.csproj", "{4EA4F0A2-1661-4243-891A-BACCBE2E4DB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemCalFileParser", "SystemCalFileParser.csproj", "{24FF6A62-3381-4A05-8965-12A2A1D31F01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4EA4F0A2-1661-4243-891A-BACCBE2E4DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EA4F0A2-1661-4243-891A-BACCBE2E4DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EA4F0A2-1661-4243-891A-BACCBE2E4DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EA4F0A2-1661-4243-891A-BACCBE2E4DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FF6A62-3381-4A05-8965-12A2A1D31F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FF6A62-3381-4A05-8965-12A2A1D31F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FF6A62-3381-4A05-8965-12A2A1D31F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FF6A62-3381-4A05-8965-12A2A1D31F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9704AC06-992B-45D1-9006-0E5F2F6D76E0}
+		SolutionGuid = {6B0ADF84-BC59-4A55-A8AF-FD702B2D3F25}
 	EndGlobalSection
 EndGlobal
