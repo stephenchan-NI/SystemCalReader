@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using System.Xml;
 
@@ -48,21 +49,25 @@ namespace SystemCalFileParser
                             data.loss = Convert.ToDouble(portCalData.ReadElementContentAsString());
                             calData.Add(data);
                             frequencyList.Add(data.frequency);
-                            powerList.Add(data.power);
+                            if (!powerList.Contains(data.power))
+                            {
+                                powerList.Add(data.power);
+                            }
                         }
                     }
                 }
             }
-            catch
+            //Error occurs if specified port is not contained in calibration file
+            catch (InvalidOperationException ex)
             {
-                throw;
+                throw new InvalidOperationException("Specified port not contained in cal file", ex);
             }
         }
 
         //Currently only interpolates for frequency. 
         public double getPathloss(double freq, double pow)
         {
-            double pathLoss = interpolateFreq(freq);
+            double pathLoss = interpolateFreq(freq, pow);
             return pathLoss;
         }
 
@@ -71,16 +76,40 @@ namespace SystemCalFileParser
 
         }
 
-        public double interpolateFreq(double freq)
+        public double interpolateFreq(double freq, double power)
         {
             //The frequency list should be sorted, but we sort it anyway to be sure.
+            //powerOffsetIndex is the number of powers in the calibration subtracted by one. We assume that the calibration uses a consistent number of powers...
             double[] interpolationArray = frequencyList.ToArray();
+            double[] powerArray = powerList.ToArray();
             Array.Sort(interpolationArray);
+            Array.Sort(powerArray);
             int interpolationIndex = Array.BinarySearch(interpolationArray, freq);
+            int powerOffsetIndex = Array.BinarySearch(powerArray, power);
+
+
             //BinarySearch returns positive index if exact match is found. If so, return path loss at index. 
-            if (interpolationIndex > 0)
+            if (interpolationIndex >= 0)
             {
-                return calData[interpolationIndex].loss;
+                //Back up index in case binary search returned middle of duplicate index. Then, we look for the first instance of our frequency.                   
+                interpolationIndex -= powerOffsetIndex;
+                while (calData[interpolationIndex].frequency != freq)
+                {
+                    interpolationIndex++;
+                }
+                //interpolationIndex now points towards first frequency element.
+                //Now check if exact power is found. If greater than 1, returns index of element found
+                if (powerOffsetIndex >=  0)
+                {
+                    interpolationIndex += powerOffsetIndex;
+                    return calData[interpolationIndex].loss;
+                }
+                //If exact power is not found, interpolate power
+                else
+                {
+                    return calData[interpolationIndex].loss;
+                }
+
             }
             //Binary search returns Bitwise complement of the index of the first value larger than Frequency. 
             else
@@ -108,6 +137,15 @@ namespace SystemCalFileParser
                 throw;
                 return 0;
             }
+        }
+
+        private bool checkExactFrequency(double freq)
+        {
+            return frequencyList.Contains(freq);
+        }
+        private bool checkExactPower(double pow)
+        {
+            return powerList.Contains(pow); ;
         }
 
     }
