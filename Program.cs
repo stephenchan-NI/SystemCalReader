@@ -15,8 +15,8 @@ namespace CalDemo
         {
             string filePath = "..\\..\\..\\supporting files\\AnokiWave_SA_Pathloss.xml";
             string calPort = "rf1/port0";
-            double frequency = 24150000000;
-            double calTone = -1;
+            double frequency = 24100000000;
+            double calTone = -5;
             double pathLoss;
 
             SystemCalFileReader calReader = new SystemCalFileReader(filePath, calPort, false);
